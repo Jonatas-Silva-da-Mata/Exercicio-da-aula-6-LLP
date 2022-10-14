@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+  int main(){
+  	setlocale(LC_ALL, "Portuguese_Brazil");
+  	
+  	int idade, dobro, metade;
+  	printf("Calculadora\n\n");
+  	
+  	printf("Digite sua idade: ");
+  	scanf("%d", &idade);
+  	
+  	if(idade % 2 == 0){
+  		printf("Esse número é par.\n");
+	  }
+	  
+	dobro = idade * 2;
+	printf("O dobro da idade digitada é %d\n", dobro);
+	
+	metade = idade/2;
+	printf("A metade do número digitado é %d", metade);
+	
+	return 0;
+  }
